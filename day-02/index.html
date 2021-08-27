@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../vue.js"></script>
+    <title>Vue.js Conditions & Loops</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Vue.js Conditions & Loops</h1>
+    <div id="app">
+        <!-- v-if v-else-if v-else Directive -->
+        <h3>Example: condition</h3>
+        <span v-if="seen">This is visible to you</span>
+        <span v-else-if="sayHi">Hi buddy</span>
+        <span v-else>You can't see and say hi </span>
+
+        <!-- v- for Directive -->
+        <h3>Example: v- for Directive</h3>
+        <ol>
+            <li v-for="todo in todos"> {{ todo.text }}</li>
+        </ol>
+    </div>
+
+    <!-- Handling User Input -->
+    <h1>Handling User Input</h1>
+    <div id="app2"> 
+
+        <!-- v-on Directive -->
+        <h3>Example:v-on Directive </h3>
+
+        <p>{{ message }}</p>
+        <button v-on:click="reverseMessage">Click to reverse message</button>
+
+        <!-- v-model Directive -->
+        <h3>Example:v-model Directive </h3>
+        
+        <p>{{ message2 }}</p>  
+        <input v-model="message2">
+    </div>
+
+  
+
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
